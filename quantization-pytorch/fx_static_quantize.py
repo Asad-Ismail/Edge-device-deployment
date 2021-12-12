@@ -35,8 +35,6 @@ def calibrate(model, data_loader):
     with torch.no_grad():
         for i,(image, target) in tqdm(enumerate(data_loader),total=len(data_loader)):
             model(image)
-            if i>=100:
-                break
 
 
 
@@ -44,7 +42,7 @@ if __name__=="__main__":
     ## Load trained model
     criterion = nn.CrossEntropyLoss()
     model=resnet50model()
-    model_file=argparse.pretrain
+    model_file=args.pretrain
     state_dict = torch.load(model_file)
     model.load_state_dict(state_dict)
     model.to("cpu")

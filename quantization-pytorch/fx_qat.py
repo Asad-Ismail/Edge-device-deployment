@@ -20,7 +20,7 @@ parser.add_argument("--engine", type=str, default='qnnpack',help="Pretrain model
 parser.add_argument("--trydevice", type=str, help="Try device to train the netowrk can be cpu or cuda:x",default="cpu")
 args=parser.parse_args()
 
-out_dir="qat_models"
+out_dir="qat_models_qnn"
 makedirs(out_dir,exist_ok=True)
 
 

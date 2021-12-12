@@ -11,12 +11,12 @@ def fashion_mnist():
 
     fashion_data_train = torchvision.datasets.FashionMNIST('.',download=True,train=True,transform=T.Compose([T.Resize(size=(224,224)),T.PILToTensor(),gray2rgb,normalize]))
     train_loader = torch.utils.data.DataLoader(fashion_data_train,
-                                            batch_size=32,
+                                            batch_size=64,
                                             shuffle=True)
 
     fashion_data_validate = torchvision.datasets.FashionMNIST('.',download=True,train=False,transform=T.Compose([T.Resize(size=(224,224)),T.PILToTensor(),gray2rgb,normalize]))
     test_loader = torch.utils.data.DataLoader(fashion_data_validate,
-                                            batch_size=32,
+                                            batch_size=64,
                                             shuffle=True)
 
     return train_loader, test_loader
