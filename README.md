@@ -27,5 +27,11 @@ With Quantization Aware Pruning we see negligible drop in accuracy
 
 
 ## Android App for Instance Segmentation
-Android App for instance segmentaiton using MaskRCNN. See D2Go/android-app for android app
+Android App for instance segmentaiton using MaskRCNN. See D2Go/android-app for android app. On Huwawei P30 model runs at average of 140ms
+<p align="center">
+    <img src="images/android_sc_1.jpg" alt="animated" width=650 height=500 />
+  </p>
+  <p align="center">
+    <img src="images/android_sc_2.jpg" alt="animated" width=650 height=500 />
+  </p>
 
