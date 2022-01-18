@@ -10,15 +10,15 @@ See D2Go for Instance semgementaiton on custom Vegetable dataset.
 
 1) To **Train** on custom dataset run
 
-**python veg_train_infer.py --train True**
+    *python veg_train_infer.py --train True*
 
 2) To **Validate and visualize** the model
 
-**python veg_train_infer.py --val True**
+    *python veg_train_infer.py --val True*
 
 3) To **Quantize** the model
 
-**python veg_train_infer.py --m_conversion True**
+    *python veg_train_infer.py --m_conversion True*
 
 4) Visual results on original dataset
 
