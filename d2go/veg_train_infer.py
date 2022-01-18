@@ -241,8 +241,8 @@ if __name__ =="__main__":
     argparser=argparse.ArgumentParser()
     argparser.add_argument("--train",default=False,help="To Train the network")
     argparser.add_argument("--network",default="qat_mask_rcnn_fbnetv3a_C4.yaml",help="Dataset directory for Training")
-    argparser.add_argument("--val",default=True,help="To Validate the results and visualize")
-    argparser.add_argument("--m_conversion",default=False,help="Convert Network to Mobile format")
+    argparser.add_argument("--val",default=False,help="To Validate the results and visualize")
+    argparser.add_argument("--m_conversion",default=True,help="Convert Network to Mobile format")
     argparser.add_argument("--data_dir",default="/media/asad/ADAS_CV/datasets_Vegs/pepper/annotated/scalecam1_2",help="Dataset directory for Training")
     argparser.add_argument("--img",default="images/test.jpg",help="Image for validaiton")
     
@@ -253,8 +253,6 @@ if __name__ =="__main__":
     torch.backends.quantized.engine = 'qnnpack'
     # Dataset name
     veg="pepp"
-    #model_type="mask_rcnn_fbnetv3a_C4.yaml"
-    #model_type="qat_mask_rcnn_fbnetv3a_C4.yaml"
     # Set Up Data and evaluator
     for d in ["train", "valid"]:
         DatasetCatalog.register(veg + "_" + d, lambda d=d: get_veg_dicts(os.path.join(args.data_dir, d)))
@@ -277,7 +275,7 @@ if __name__ =="__main__":
         v = Visualizer(im, veg_metadata)
         out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
         plt.imshow(out.get_image()[:, :, ::-1])
-        plt.title("Image for Validation")
+        plt.title("Original Model Validation")
         plt.show()
     if args.m_conversion:
         previous_level = logging.root.manager.disable
@@ -306,7 +304,7 @@ if __name__ =="__main__":
         v = Visualizer(im, veg_metadata)
         out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
         plt.imshow(out.get_image()[:, :, ::-1])
-        plt.title("Image for model for Android app")
+        plt.title("Quantized Model")
         plt.show()
         
     
