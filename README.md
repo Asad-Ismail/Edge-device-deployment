@@ -12,7 +12,7 @@ Visual results on original dataset
     <img src="images/org_model.png" alt="animated" width=650 height=500 />
   </p>
   
-With Post taining quantization we observe the classification and object detection works well while we suffer significat drop in Dense Prediction (masks)
+With Post taining quantization we observe the classification and object detection works well while we suffer significat drop in accuracy of Dense Prediction (masks)
 
 <p align="center">
     <img src="images/post_quantization.png" alt="animated" width=650 height=500 />
