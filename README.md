@@ -6,9 +6,24 @@ See quantization-pytorch for Pytorch Quantizatizationn Tests
 
 ## D2Go for Instance Segmentation
 See D2Go for Instance semgementaiton on custom Vegetable dataset. 
-If we use Post taining quantization we observe the classification and object detection works well while we suffer significat drop in Dense Prediction(masks)
+Visual results on original dataset
+
+<p align="center">
+    <img src="images/org_model.png" alt="animated" width=650 height=200 />
+  </p>
+  
+With Post taining quantization we observe the classification and object detection works well while we suffer significat drop in Dense Prediction (masks)
+
+<p align="center">
+    <img src="images/post_quantization.png alt="animated" width=650 height=200 />
+  </p>
 
 With Quantization Aware Pruning we see negligible drop in accuracy
+                                                         
+<p align="center">
+    <img src="images/QAT_model.png alt="animated" width=650 height=200 />
+  </p>
+
 
 
 ## Android App for Instance Segmentation
