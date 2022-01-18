@@ -37,4 +37,5 @@ For Android app for instance segmentaiton using MaskRCNN we added nearest Neighb
 
 ### References
 ```
-1) See original work of D2G0 https://github.com/facebookresearch/d2go
+1) See  D2G0 https://github.com/facebookresearch/d2go
+2) See  Android App for Pytorch https://github.com/pytorch/android-demo-app
