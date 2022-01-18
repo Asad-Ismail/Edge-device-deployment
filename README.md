@@ -8,13 +8,13 @@ See quantization-pytorch for Pytorch Quantizatizationn Tests
 See D2Go for Instance semgementaiton on custom Vegetable dataset. 
 
 
-**To Train on custom dataset run**
+To **Train** on custom dataset run
 python veg_train_infer.py --train True
 
-**To Validate and visualize the model**
+To **Validate and visualize** the model
 python veg_train_infer.py --val True
 
-**To Quantize the model**
+To **Quantize** the model
 python veg_train_infer.py --m_conversion True
 
 Visual results on original dataset
