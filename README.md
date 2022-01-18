@@ -15,13 +15,13 @@ Visual results on original dataset
 With Post taining quantization we observe the classification and object detection works well while we suffer significat drop in Dense Prediction (masks)
 
 <p align="center">
-    <img src="images/post_quantization.png alt="animated" width=650 height=600 />
+    <img src="images/post_quantization.png" alt="animated" width=650 height=600 />
   </p>
 
 With Quantization Aware Pruning we see negligible drop in accuracy
                                                          
 <p align="center">
-    <img src="images/QAT_model.png alt="animated" width=650 height=600 />
+    <img src="images/QAT_model.png" alt="animated" width=650 height=600 />
   </p>
 
 
