@@ -1,6 +1,6 @@
 ## Pytorch Quantization tests
 
-### Tested Graph mode quantization of pytorch which takes care of most of the intricaicies like merging layers during static quanitazation
+
 ## Requirement:
 
 Quantization decreases the model size by 4x and also require less memory bandwidth leading to considerable speedups
