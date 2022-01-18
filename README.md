@@ -36,4 +36,4 @@ Android App for instance segmentaiton using MaskRCNN. See D2Go/android-app for a
 
 ### References
 ```
-1) D2G0 https://github.com/facebookresearch/d2go
+1) See original work of D2G0 https://github.com/facebookresearch/d2go
